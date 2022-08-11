@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply font-ubuntu text-neutral-very-dark-grayish-blue
+  }
+}
+
 * {
   -webkit-tap-highlight-color: transparent;
 }
