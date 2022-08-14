@@ -13,3 +13,24 @@
 * {
   -webkit-tap-highlight-color: transparent;
 }
+
+#state {
+  background-image: url(./images/bg-pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: -5rem -10rem;
+}
+
+@media screen and (min-width: 425px) {
+  #state{
+    background-position: -5rem -10rem;
+    background-size: 600px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #state{
+    background-position: 0rem -23rem;
+    background-size: cover;
+  }
+}

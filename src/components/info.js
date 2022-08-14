@@ -4,10 +4,10 @@ const Info = ({heading, displayHeading, leadOne, descOne, leadTwo, descTwo, imgD
             <div className="container mx-auto px-8 py-16 text-center">
                 <h1 className={displayHeading ? 'text-2xl text-primary-very-dark-blue' : 'hidden'}>{heading}</h1>
 
-                <div className={imgStart ? 'flex flex-col gap-8 itmes-center text-center pt-12' : 'flex flex-col gap-8 itmes-center text-center pt-12'}>
+                <div className={imgStart ? 'flex flex-col gap-8 items-center text-center pt-12' : 'flex flex-col gap-8 items-center text-center pt-12'}>
                     <div>
                         <picture>
-                            <source media="(min-width: 1024px)" srcset={imgDesktop} />
+                            <source media="(min-width: 1024px)" srcSet={imgDesktop} />
                             <img src={imgMobile} alt="Illustration" />
                         </picture>
                     </div>

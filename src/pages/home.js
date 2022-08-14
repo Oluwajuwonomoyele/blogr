@@ -5,7 +5,7 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import { useState } from 'react';
 import MobileNav from '../components/mobileNav';
-import { infoObjOne } from '../infoData';
+import { infoObjOne, infoObjTwo } from '../infoData';
 
 const Home = () => {
     const [openNav, setOpenNav] = useState(false);
@@ -20,7 +20,7 @@ const Home = () => {
             <Hero />
             <Info {...infoObjOne}/>
             <State />
-            <Info />
+            <Info {...infoObjTwo}/>
             <Footer />
         </>
     );
