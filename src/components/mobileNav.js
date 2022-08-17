@@ -3,9 +3,10 @@ import CompanyDd from "./dropdowns/companyDropdown";
 import ConnectDd from "./dropdowns/connectDropdown";
 import ProductDd from "./dropdowns/productDropdown";
 
-const MobileNav = ({openNav }) => {
+const MobileNav = ({openNav, closeNav }) => {
     return (  
-        <div className={ openNav ? "fixed z-40 bg-neutral-white w-3/4 mx-auto inset-x-0 top-32 rounded-lg flex flex-col items-center text-center gap-8 py-12 shadow-xl transition-all ease-linear duration-200": "fixed bg-red-900 w-3/4 mx-auto inset-x-0 top-32 rounded-lg flex flex-col items-center text-center gap-8 py-12 shadow-xl scale-0 transition-all ease-linear duration-200"}>
+        <section className="fixed z-30 inset-0" onClick={closeNav}>
+            <div className={ openNav ? "relative bg-neutral-white w-3/4 mx-auto top-32 rounded-lg flex flex-col items-center text-center gap-8 py-12 shadow-xl transition-all ease-linear duration-200": "relative bg-red-900 w-3/4 mx-auto top-32 rounded-lg flex flex-col items-center text-center gap-8 py-12 shadow-xl scale-0 transition-all ease-linear duration-200"}>
             <div className="flex flex-col gap-8">
                 <ProductDd mobile />
                 <CompanyDd mobile />
@@ -16,6 +17,7 @@ const MobileNav = ({openNav }) => {
 
             <Button mobile />
         </div>
+        </section>
     );
 }
  

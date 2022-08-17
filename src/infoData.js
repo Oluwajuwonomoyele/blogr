@@ -12,7 +12,7 @@ export const infoObjOne = {
     descTwo: 'Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.',
     imgDesktop: imageOneDesktop,
     imgMobile: imageOneMobile,
-    imgStart: false
+    textStart: true
 }
 
 export const infoObjTwo = {
@@ -23,5 +23,5 @@ export const infoObjTwo = {
     descTwo: 'Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.',
     imgDesktop: imageTwoDesktop,
     imgMobile: imageTwoMobile,
-    imgStart: true
+    textStart: false
 }

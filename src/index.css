@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply scroll-smooth
+  }
+  
   body {
     @apply font-ubuntu text-neutral-very-dark-grayish-blue
   }
@@ -32,5 +36,12 @@
   #state{
     background-position: 0rem -23rem;
     background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #state{
+    background-position: -6rem -28rem;
+    background-size: 900px;
   }
 }

@@ -7,18 +7,23 @@ import { useState } from 'react';
 import MobileNav from '../components/mobileNav';
 import { infoObjOne, infoObjTwo } from '../infoData';
 
+
 const Home = () => {
     const [openNav, setOpenNav] = useState(false);
 
     const handleClick = () => {
         setOpenNav(!openNav);
+    }  
+
+    const closeNav = () => {
+        setOpenNav(false)
     }
     return (  
         <>  
-            <MobileNav openNav={openNav} />
+            <MobileNav openNav={openNav} closeNav={closeNav} />
             <Navbar handleClick={handleClick} openNav={openNav} />
             <Hero />
-            <Info {...infoObjOne}/>
+            <Info {...infoObjOne} />
             <State />
             <Info {...infoObjTwo}/>
             <Footer />
