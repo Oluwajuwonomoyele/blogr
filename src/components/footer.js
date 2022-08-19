@@ -4,9 +4,10 @@ const Footer = () => {
     const scrollHome = () => {
         window.scrollTo(0,0)
     }
+
     return (  
         <footer className="bg-neutral-very-dark-black-blue rounded-tr-[7rem]">
-            <div className="container mx-auto px-8  py-16 flex flex-col lg:flex-row lg:justify-between items-center lg:items-start  gap-16">
+            <div className="container mx-auto px-8 py-16 flex flex-col lg:flex-row lg:justify-between items-center lg:items-start  gap-16">
                 <div className='cursor-pointer lg:basis-[20%]' onClick={() => {scrollHome()}}>
                     <img src={logo} alt="Logo" className='mx-auto'/>
                 </div>
@@ -43,7 +44,11 @@ const Footer = () => {
 
                     </div>
                 </div>
+            </div>
 
+            <div className='text-center text-neutral-grayish-blue'>
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel='noreferrer' className='cursor-pointer'>Frontend Mentor</a>. 
+                Coded by <a href="https://github.com/oluwajuwonomoyele" className='animate-pulse text-primary-light-red cursor-pointer'>Olutomisin Oluwajuwon</a>.
             </div>
         </footer>
     );

@@ -14,13 +14,9 @@ const Home = () => {
     const handleClick = () => {
         setOpenNav(!openNav);
     }  
-
-    const closeNav = () => {
-        setOpenNav(false)
-    }
     return (  
         <>  
-            <MobileNav openNav={openNav} closeNav={closeNav} />
+            <MobileNav openNav={openNav} />
             <Navbar handleClick={handleClick} openNav={openNav} />
             <Hero />
             <Info {...infoObjOne} />

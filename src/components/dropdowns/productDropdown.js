@@ -7,7 +7,7 @@ const ProductDd = ({mobile}) => {
 
     return (  
         <Menu as='div' className={ mobile ? 'relative cursor-pointer' : 'relative cursor-pointer text-sm'}>
-            <Menu.Button onClick={() => {setOpen(!open)}} className=''>
+            <Menu.Button>
                 <div className={ mobile ? 'flex items-center gap-2 hover:opacity-90' : 'flex items-center gap-2 text-neutral-white hover:underline'}>
                     <span>Product</span>
 
